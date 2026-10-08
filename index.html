@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hiksha Saathi - Digital Learning Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Shiksha Saathi</h1>
+        <p>Digital Learning Portal for Government Schools</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About CEP</a>
+            <a href="#subjects">Subjects</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#cyber">Cyber Safety</a>
+            <a href="#feedback">Feedback</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <h2>Learn Today, Grow Tomorrow! 🌟</h2>
+        <p>
+            Welcome to Shiksha Saathi – a simple digital learning
+            platform created for school students.
+        </p>
+
+        <button onclick="startLearning()">Start Learning</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>📖 About Our CEP Project</h2>
+
+        <p>
+            Our Community Engagement Project focuses on
+            <b>Developing E-Learning Content for Government Schools.</b>
+        </p>
+
+        <p>
+            The main aim of this project is to provide simple,
+            useful and easy-to-understand digital learning content
+            for students.
+        </p>
+    </section>
+
+    <!-- SUBJECTS -->
+    <section id="subjects">
+        <h2>📚 Our Subjects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📘 English</h3>
+                <p>Learn basic English words and grammar.</p>
+                <button onclick="showMessage('English')">
+                    Start
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🔢 Mathematics</h3>
+                <p>Learn numbers, calculations and basic maths.</p>
+                <button onclick="showMessage('Mathematics')">
+                    Start
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🔬 Science</h3>
+                <p>Explore basic science concepts.</p>
+                <button onclick="showMessage('Science')">
+                    Start
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>💻 Computer Basics</h3>
+                <p>Learn about computers and technology.</p>
+                <button onclick="showMessage('Computer Basics')">
+                    Start
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🌍 General Knowledge</h3>
+                <p>Improve your general knowledge.</p>
+                <button onclick="showMessage('General Knowledge')">
+                    Start
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz">
+        <h2>📝 Quick Quiz</h2>
+
+        <div class="quiz-box">
+
+            <p><b>1. What is the full form of CPU?</b></p>
+
+            <label>
+                <input type="radio" name="q1" value="correct">
+                Central Processing Unit
+            </label><br>
+
+            <label>
+                <input type="radio" name="q1" value="wrong">
+                Computer Personal Unit
+            </label><br>
+
+            <label>
+                <input type="radio" name="q1" value="wrong">
+                Central Program Unit
+            </label>
+
+            <br><br>
+
+            <button onclick="checkQuiz()">Submit Quiz</button>
+
+            <h3 id="result"></h3>
+
+        </div>
+    </section>
+
+    <!-- CYBER SAFETY -->
+    <section id="cyber">
+        <h2>🔐 Cyber Safety</h2>
+
+        <div class="safety">
+            <p>✅ Never share your OTP with anyone.</p>
+            <p>✅ Never share your ATM PIN or password.</p>
+            <p>✅ Use strong passwords.</p>
+            <p>✅ Do not click suspicious links.</p>
+            <p>✅ Report online fraud to a trusted person.</p>
+        </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section id="feedback">
+        <h2>💬 Student Feedback</h2>
+
+        <form onsubmit="submitFeedback(event)">
+
+            <input type="text" placeholder="Enter your name" required>
+
+            <input type="text" placeholder="Enter your class" required>
+
+            <textarea placeholder="What did you learn?"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+        <p id="feedbackMessage"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Shiksha Saathi | Community Engagement Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
